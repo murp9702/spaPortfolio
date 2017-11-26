@@ -24,17 +24,6 @@ var router = new VueRouter({
       }
     },
     {
-      path: '/botany',
-      component: function(resolve, reject){
-        $.get('/html/botany.component.html', function(htmlFromServer){
-          var botanyComponent = {
-            template: htmlFromServer
-          }
-          resolve(botanyComponent)
-        })
-      }
-    },
-    {
       path: '/photography',
       component: function(resolve,reject){
         $.get('/html/photography.component.html', function(htmlFromServer){
