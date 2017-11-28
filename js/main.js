@@ -1,3 +1,12 @@
+Vue.component('carousel-pic', {
+  template: `
+  <div class="item">
+    <img :src="'/img/photographySamples/' + fileName" :alt="alt">
+  </div>`,
+  props: ["fileName", "alt"]
+})
+
+
 var router = new VueRouter({
   routes: [
     {
